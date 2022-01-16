@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "363284962873",
+    "project_id": "dryapp-4c59b",
+    "storage_bucket": "dryapp-4c59b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363284962873:android:2c0c1b697d8bedbf0f37e8",
+        "android_client_info": {
+          "package_name": "com.erengulbahar.dryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363284962873-5fgvs8990qobakcmc5bnlpp49ri45tng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8-MvKhRrndwP4vROEw31v55GUKDLfXoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363284962873-5fgvs8990qobakcmc5bnlpp49ri45tng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminListPanel">
+
+    <TextView
+        android:id="@+id/jackets1"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="Jackets"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <TextView
+        android:id="@+id/coats1"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="Coats"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toEndOf="@+id/jackets1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <TextView
+        android:id="@+id/shirts1"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="Shirts"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toEndOf="@+id/coats1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jackets1"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toEndOf="@+id/price1"
+        app:layout_constraintTop_toBottomOf="@+id/coats1"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/price3"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toEndOf="@+id/price2"
+        app:layout_constraintTop_toBottomOf="@+id/shirts1"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/tshirts1"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="T-Shirts"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price1"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/trousers1"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="Trousers"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toEndOf="@+id/tshirts1"
+        app:layout_constraintTop_toBottomOf="@+id/price2"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/shrts1"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="Shorts"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toEndOf="@+id/trousers1"
+        app:layout_constraintTop_toBottomOf="@+id/price3"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/price4"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tshirts1"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/price5"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toEndOf="@+id/price4"
+        app:layout_constraintTop_toBottomOf="@+id/trousers1"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/price6"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toEndOf="@+id/price5"
+        app:layout_constraintTop_toBottomOf="@+id/shrts1"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/furnitures1"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="Furnitures"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price4"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <TextView
+        android:id="@+id/carpets1"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="Carpets"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toEndOf="@+id/furnitures1"
+        app:layout_constraintTop_toBottomOf="@+id/price5"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <TextView
+        android:id="@+id/pillows1"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="Pillows"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toEndOf="@+id/carpets1"
+        app:layout_constraintTop_toBottomOf="@+id/price6"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <TextView
+        android:id="@+id/price7"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/furnitures1"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/price8"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toEndOf="@+id/price7"
+        app:layout_constraintTop_toBottomOf="@+id/carpets1"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:id="@+id/price9"
+        android:layout_width="88dp"
+        android:layout_height="24dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toEndOf="@+id/price8"
+        app:layout_constraintTop_toBottomOf="@+id/pillows1"
+        app:layout_constraintVertical_bias="0.104" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

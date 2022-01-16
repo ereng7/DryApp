@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_graph"
+    app:startDestination="@id/loginPanel">
+
+    <fragment
+        android:id="@+id/loginPanel"
+        android:name="com.erengulbahar.dryapp.LoginPanel"
+        android:label="fragment_login_panel"
+        tools:layout="@layout/fragment_login_panel" >
+        <action
+            android:id="@+id/action_loginPanel_to_adminPanel"
+            app:destination="@id/adminPanel" />
+        <action
+            android:id="@+id/action_loginPanel_to_userPanel"
+            app:destination="@id/userPanel" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminPanel"
+        android:name="com.erengulbahar.dryapp.admin.AdminPanel"
+        android:label="fragment_admin_panel"
+        tools:layout="@layout/fragment_admin_panel" >
+        <action
+            android:id="@+id/action_adminPanel_to_adminSettings"
+            app:destination="@id/adminSettings"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/my_graph"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/userPanel"
+        android:name="com.erengulbahar.dryapp.user.UserPanel"
+        android:label="fragment_user_panel"
+        tools:layout="@layout/fragment_user_panel" >
+        <action
+            android:id="@+id/action_userPanel_to_selectionPanel"
+            app:destination="@id/selectionPanel"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/my_graph"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/adminSettings"
+        android:name="com.erengulbahar.dryapp.admin.AdminSettings"
+        android:label="fragment_admin_settings"
+        tools:layout="@layout/fragment_admin_settings" >
+        <action
+            android:id="@+id/action_adminSettings_to_costPanel"
+            app:destination="@id/costPanel" />
+        <action
+            android:id="@+id/action_adminSettings_to_loginPanel"
+            app:destination="@id/loginPanel"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/my_graph"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_adminSettings_to_adminListPanel"
+            app:destination="@id/adminListPanel" />
+        <action
+            android:id="@+id/action_adminSettings_to_adminAppointmentPanel2"
+            app:destination="@id/adminAppointmentPanel" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectionPanel"
+        android:name="com.erengulbahar.dryapp.user.SelectionPanel"
+        android:label="fragment_selection_panel"
+        tools:layout="@layout/fragment_selection_panel" >
+        <action
+            android:id="@+id/action_selectionPanel_to_clothePanel"
+            app:destination="@id/clothePanel" />
+        <action
+            android:id="@+id/action_selectionPanel_to_furniturePanel"
+            app:destination="@id/furniturePanel" />
+        <action
+            android:id="@+id/action_selectionPanel_to_loginPanel"
+            app:destination="@id/loginPanel"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/my_graph"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/clothePanel"
+        android:name="com.erengulbahar.dryapp.user.ClothePanel"
+        android:label="fragment_clothe_panel"
+        tools:layout="@layout/fragment_clothe_panel" >
+        <action
+            android:id="@+id/action_clothePanel_to_appointmentPanel"
+            app:destination="@id/appointmentPanel" />
+        <action
+            android:id="@+id/action_clothePanel_to_loginPanel"
+            app:destination="@id/loginPanel"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/my_graph"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_clothePanel_to_appointmentList"
+            app:destination="@id/appointmentList" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/furniturePanel"
+        android:name="com.erengulbahar.dryapp.user.FurniturePanel"
+        android:label="fragment_furniture_panel"
+        tools:layout="@layout/fragment_furniture_panel" >
+        <action
+            android:id="@+id/action_furniturePanel_to_appointmentFPanel"
+            app:destination="@id/appointmentFPanel" />
+        <action
+            android:id="@+id/action_furniturePanel_to_loginPanel"
+            app:destination="@id/loginPanel"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/my_graph"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_furniturePanel_to_appointmentFList"
+            app:destination="@id/appointmentFList" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentPanel"
+        android:name="com.erengulbahar.dryapp.user.AppointmentPanel"
+        android:label="fragment_appointment_panel"
+        tools:layout="@layout/fragment_appointment_panel" >
+        <action
+            android:id="@+id/action_appointmentPanel_to_appointmentList"
+            app:destination="@id/appointmentList"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/appointmentPanel"
+            app:popUpToInclusive="true"
+            />
+        <argument
+            android:name="type"
+            app:argType="string"
+            android:defaultValue="none" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentFPanel"
+        android:name="com.erengulbahar.dryapp.user.AppointmentFPanel"
+        android:label="fragment_appointment_f_panel"
+        tools:layout="@layout/fragment_appointment_f_panel" >
+        <action
+            android:id="@+id/action_appointmentFPanel_to_appointmentFList"
+            app:destination="@id/appointmentFList"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/appointmentFPanel"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_appointmentFPanel_to_appointmentFList2"
+            app:destination="@id/appointmentFList" />
+        <argument
+            android:name="type"
+            app:argType="string"
+            android:defaultValue="none" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentList"
+        android:name="com.erengulbahar.dryapp.user.AppointmentList"
+        android:label="fragment_appointment_list"
+        tools:layout="@layout/fragment_appointment_list" >
+        <action
+            android:id="@+id/action_appointmentList_to_appointmentDetails"
+            app:destination="@id/appointmentDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentFList"
+        android:name="com.erengulbahar.dryapp.user.AppointmentFList"
+        android:label="fragment_appointment_f_list"
+        tools:layout="@layout/fragment_appointment_f_list" >
+        <action
+            android:id="@+id/action_appointmentFList_to_appointmentsFDetails"
+            app:destination="@id/appointmentsFDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentDetails"
+        android:name="com.erengulbahar.dryapp.user.AppointmentDetails"
+        android:label="fragment_appointment_details"
+        tools:layout="@layout/fragment_appointment_details" >
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_appointmentDetails_to_appointmentList"
+            app:destination="@id/appointmentList"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/appointmentDetails"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentsFDetails"
+        android:name="com.erengulbahar.dryapp.user.AppointmentsFDetails"
+        android:label="fragment_appointments_f_details"
+        tools:layout="@layout/fragment_appointments_f_details" >
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_appointmentsFDetails_to_appointmentFList"
+            app:destination="@id/appointmentFList"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/appointmentsFDetails"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/costPanel"
+        android:name="com.erengulbahar.dryapp.admin.CostPanel"
+        android:label="fragment_cost_panel"
+        tools:layout="@layout/fragment_cost_panel" >
+        <action
+            android:id="@+id/action_costPanel_to_adminSettings"
+            app:destination="@id/adminSettings"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/my_graph"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/adminListPanel"
+        android:name="com.erengulbahar.dryapp.admin.AdminListPanel"
+        android:label="fragment_admin_list_panel"
+        tools:layout="@layout/fragment_admin_list_panel" >
+        <action
+            android:id="@+id/action_adminListPanel_to_loginPanel"
+            app:destination="@id/loginPanel"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/my_graph"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAppointmentPanel"
+        android:name="com.erengulbahar.dryapp.admin.AdminAppointmentPanel"
+        android:label="fragment_admin_appointment_panel"
+        tools:layout="@layout/fragment_admin_appointment_panel" >
+        <action
+            android:id="@+id/action_adminAppointmentPanel_to_loginPanel"
+            app:destination="@id/loginPanel"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/my_graph"
+            app:popUpToInclusive="true"
+
+            />
+        <action
+            android:id="@+id/action_adminAppointmentPanel_to_adminAppointmentList"
+            app:destination="@id/adminAppointmentList" />
+        <action
+            android:id="@+id/action_adminAppointmentPanel_to_adminAppointmentFList"
+            app:destination="@id/adminAppointmentFList" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAppointmentFList"
+        android:name="com.erengulbahar.dryapp.admin.AdminAppointmentFList"
+        android:label="fragment_admin_appointment_f_list"
+        tools:layout="@layout/fragment_admin_appointment_f_list" >
+        <action
+            android:id="@+id/action_adminAppointmentFList_to_adminAppointmentsFDetails"
+            app:destination="@id/adminAppointmentsFDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAppointmentList"
+        android:name="com.erengulbahar.dryapp.admin.AdminAppointmentList"
+        android:label="fragment_admin_appointment_list"
+        tools:layout="@layout/fragment_admin_appointment_list" >
+        <action
+            android:id="@+id/action_adminAppointmentList_to_adminAppointmentsDetails"
+            app:destination="@id/adminAppointmentsDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAppointmentsDetails"
+        android:name="com.erengulbahar.dryapp.admin.AdminAppointmentsDetails"
+        android:label="fragment_admin_appointments_details"
+        tools:layout="@layout/fragment_admin_appointments_details" >
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAppointmentsFDetails"
+        android:name="com.erengulbahar.dryapp.admin.AdminAppointmentsFDetails"
+        android:label="fragment_admin_appointments_f_details"
+        tools:layout="@layout/fragment_admin_appointments_f_details" >
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>
